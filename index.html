@@ -1,165 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shreyas Rasam | AWS DevOps Engineer</title>
-  <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyas Rasam Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="logo">Shreyas</div>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <header>
+        <h1>Shreyas Rasam</h1>
+        <p>AWS Cloud & DevOps Engineer</p>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="hero-content">
-    <h1>Shreyas Rasam</h1>
-    <h2>AWS Cloud & DevOps Engineer</h2>
+        <div class="buttons">
+            <a href="#">Resume</a>
+            <a href="https://github.com/SSR139" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/shreyas-rasam-258213242/" target="_blank">LinkedIn</a>
+        </div>
+    </header>
 
-    <p>
-      AWS DevOps Engineer skilled in CI/CD pipelines, Docker, Linux, AWS infrastructure,
-      automation, and scalable cloud solutions.
-    </p>
+    <!-- EXPERIENCE -->
 
-    <div class="buttons">
-      <a href="mailto:Shreyas.rasam@outlook.com" class="btn">Email</a>
-      <a href="https://github.com/SSR139" target="_blank" class="btn">GitHub</a>
-      <a href="https://www.linkedin.com/in/shreyas-rasam-258213242/" target="_blank" class="btn">LinkedIn</a>
-    </div>
-  </div>
-</header>
+    <section>
+        <h2 class="title">Experience</h2>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>
-    AWS Cloud & DevOps Engineer with hands-on experience in designing, deploying,
-    and managing scalable cloud infrastructure using AWS services, automation tools,
-    and CI/CD pipelines.
-  </p>
-</section>
+        <div class="cards">
 
-<!-- SKILLS -->
-<section id="skills" class="section dark">
-  <h2>Skills</h2>
+            <div class="card" onclick="openModal('orbit')">
+                <h3>Orbit TechSol</h3>
+                <p>Technical Support Engineer</p>
+                <span>Nov 2025 - Present</span>
+            </div>
 
-  <div class="grid">
-    <div class="card">AWS Cloud</div>
-    <div class="card">CI/CD Pipelines</div>
-    <div class="card">Docker</div>
-    <div class="card">Kubernetes (Basic)</div>
-    <div class="card">Linux</div>
-    <div class="card">Git & GitHub</div>
-    <div class="card">Jenkins</div>
-    <div class="card">Python & Bash</div>
-    <div class="card">Cloud Security</div>
-    <div class="card">Monitoring (CloudWatch)</div>
-  </div>
-</section>
+            <div class="card" onclick="openModal('sbi')">
+                <h3>SBI Life Insurance</h3>
+                <p>Senior Associate</p>
+                <span>Jun 2023 - Nov 2025</span>
+            </div>
 
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <h2>Projects</h2>
+        </div>
+    </section>
 
-  <div class="grid">
+    <!-- PROJECTS -->
 
-    <div class="card">
-      <h3>AWS CI/CD Pipeline</h3>
-      <p>
-        Automated build, test, and deployment using AWS CodePipeline, CodeBuild,
-        CodeDeploy, and CodeCommit.
-      </p>
-    </div>
+    <section>
+        <h2 class="title">Projects</h2>
 
-    <div class="card">
-      <h3>Jenkins CI/CD Pipeline</h3>
-      <p>
-        CI/CD pipeline using Jenkins, Docker, GitHub webhooks and EC2 deployment
-        for Node.js application.
-      </p>
-    </div>
+        <div class="cards">
 
-    <div class="card">
-      <h3>ECS Container Deployment</h3>
-      <p>
-        Deployed containerized Node.js app using ECS Fargate and ECR with IAM security
-        and CloudWatch monitoring.
-      </p>
-    </div>
+            <div class="card" onclick="openModal('project1')">
+                <h3>CI/CD Pipeline with AWS DevOps Tools</h3>
+            </div>
 
-    <div class="card">
-      <h3>Scalable AWS Architecture</h3>
-      <p>
-        Designed highly available architecture using VPC, EC2, ALB, Auto Scaling,
-        S3, CloudTrail, and AWS Backup.
-      </p>
+            <div class="card" onclick="openModal('project2')">
+                <h3>Jenkins Docker AWS Pipeline</h3>
+            </div>
+
+            <div class="card" onclick="openModal('project3')">
+                <h3>ECS ECR Fargate Deployment</h3>
+            </div>
+
+            <div class="card" onclick="openModal('project4')">
+                <h3>Enterprise AWS Architecture</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+
+    <section>
+        <h2 class="title">Skills</h2>
+
+        <div class="skills">
+            <span>AWS</span>
+            <span>Docker</span>
+            <span>Linux</span>
+            <span>Python</span>
+            <span>Bash</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Jenkins</span>
+            <span>CI/CD</span>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <div id="modalBody"></div>
+
+        </div>
     </div>
 
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="section dark">
-  <h2>Experience</h2>
-
-  <div class="card full">
-    <h3>Technical Support Engineer – Orbit TechSol</h3>
-    <span>Nov 2025 – Present</span>
-    <p>
-      Supported production environments, monitored application health,
-      handled incidents, and collaborated with DevOps teams to ensure
-      system stability and fast issue resolution.
-    </p>
-  </div>
-
-  <div class="card full">
-    <h3>Senior Associate – SBI Life Insurance Ltd</h3>
-    <span>Jun 2023 – Nov 2025</span>
-    <p>
-      Provided application support, incident management, SLA compliance,
-      and ensured smooth functioning of enterprise systems.
-    </p>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education" class="section">
-  <h2>Education</h2>
-
-  <div class="card full">
-    <p><b>B.E (EXTC)</b> – Vidyalankar Institute of Technology | CGPA: 8.87</p>
-    <p><b>Diploma</b> – Government Polytechnic Mumbai | 86%</p>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section dark">
-  <h2>Contact</h2>
-
-  <div class="contact-box">
-    <p>Email: Shreyas.rasam@outlook.com</p>
-    <p>GitHub: github.com/SSR139</p>
-    <p>LinkedIn: shreyas-rasam</p>
-    <p>Location: Mumbai, India</p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Shreyas Rasam | AWS DevOps Engineer</p>
-</footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
