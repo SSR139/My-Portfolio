@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shreyas Rasam Portfolio</title>
+    <title>Shreyas Rasam | AWS Cloud & DevOps Engineer</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- HERO SECTION -->
 
     <header>
         <h1>Shreyas Rasam</h1>
         <p>AWS Cloud & DevOps Engineer</p>
 
         <div class="buttons">
-            <a href="#">Resume</a>
             <a href="https://github.com/SSR139" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/shreyas-rasam-258213242/" target="_blank">LinkedIn</a>
+            <a href="#">Resume</a>
         </div>
     </header>
 
@@ -53,11 +56,11 @@
             </div>
 
             <div class="card" onclick="openModal('project2')">
-                <h3>Jenkins Docker AWS Pipeline</h3>
+                <h3>Jenkins + Docker + AWS Pipeline</h3>
             </div>
 
             <div class="card" onclick="openModal('project3')">
-                <h3>ECS ECR Fargate Deployment</h3>
+                <h3>AWS ECS ECR Fargate Deployment</h3>
             </div>
 
             <div class="card" onclick="openModal('project4')">
@@ -82,12 +85,20 @@
             <span>GitHub</span>
             <span>Jenkins</span>
             <span>CI/CD</span>
+            <span>Cloud Security</span>
         </div>
     </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Shreyas Rasam | AWS Cloud & DevOps Engineer
+    </footer>
 
     <!-- MODAL -->
 
     <div id="modal" class="modal">
+
         <div class="modal-content">
 
             <span class="close" onclick="closeModal()">&times;</span>
@@ -95,6 +106,7 @@
             <div id="modalBody"></div>
 
         </div>
+
     </div>
 
     <script src="script.js"></script>
