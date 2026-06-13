@@ -1,115 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shreyas Rasam | AWS Cloud & DevOps Engineer</title>
+    <title>Shreyas Rasam | AWS Cloud Engineer</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <!-- HERO SECTION -->
 
-    <header>
-        <h1>Shreyas Rasam</h1>
-        <p>AWS Cloud & DevOps Engineer</p>
+    <header class="hero">
 
-        <div class="buttons">
-            <a href="https://github.com/SSR139" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/shreyas-rasam-258213242/" target="_blank">LinkedIn</a>
-            <a href="#">Resume</a>
+        <nav>
+            <h2 class="logo">Shreyas Rasam</h2>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+
+            <h1>AWS Cloud & DevOps Engineer</h1>
+
+            <h3>Building Scalable Cloud Infrastructure & Automation Solutions</h3>
+
+            <p>
+                Cloud Engineer with experience in AWS, Linux,
+                Networking, CI/CD, Docker and Infrastructure Automation.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#">Download Resume</a>
+
+                <a href="https://github.com/SSR139" target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/shreyas-rasam-258213242/"
+                    target="_blank">
+                    LinkedIn
+                </a>
+            </div>
+
         </div>
+
     </header>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-container">
+
+            <p>
+                Cloud Engineer with 3+ years of IT experience specializing
+                in AWS Cloud, Linux Administration, Networking,
+                DevOps Practices, CI/CD Pipelines and Infrastructure Support.
+
+                Passionate about building secure, scalable and highly
+                available cloud solutions.
+            </p>
+
+        </div>
+
+    </section>
 
     <!-- EXPERIENCE -->
 
-    <section>
-        <h2 class="title">Experience</h2>
+    <section id="experience">
 
-        <div class="cards">
+        <h2 class="section-title">Experience</h2>
 
-            <div class="card" onclick="openModal('orbit')">
+        <div class="timeline">
+
+            <div class="timeline-item">
+
                 <h3>Orbit TechSol</h3>
-                <p>Technical Support Engineer</p>
+
+                <h4>Technical Support Engineer</h4>
+
                 <span>Nov 2025 - Present</span>
+
+                <p>
+                    Infrastructure support, cloud troubleshooting,
+                    Linux administration and enterprise networking.
+                </p>
+
             </div>
 
-            <div class="card" onclick="openModal('sbi')">
+            <div class="timeline-item">
+
                 <h3>SBI Life Insurance</h3>
-                <p>Senior Associate</p>
+
+                <h4>Senior Associate</h4>
+
                 <span>Jun 2023 - Nov 2025</span>
+
+                <p>
+                    Incident management, application support,
+                    system monitoring and operational excellence.
+                </p>
+
             </div>
 
         </div>
+
     </section>
 
-    <!-- PROJECTS -->
+    <!-- CERTIFICATIONS -->
 
     <section>
-        <h2 class="title">Projects</h2>
 
-        <div class="cards">
+        <h2 class="section-title">Certifications</h2>
 
-            <div class="card" onclick="openModal('project1')">
-                <h3>CI/CD Pipeline with AWS DevOps Tools</h3>
-            </div>
+        <div class="cert-grid">
 
-            <div class="card" onclick="openModal('project2')">
-                <h3>Jenkins + Docker + AWS Pipeline</h3>
-            </div>
+            <div class="cert-card">AWS Cloud Practitioner</div>
 
-            <div class="card" onclick="openModal('project3')">
-                <h3>AWS ECS ECR Fargate Deployment</h3>
-            </div>
+            <div class="cert-card">CCNA</div>
 
-            <div class="card" onclick="openModal('project4')">
-                <h3>Enterprise AWS Architecture</h3>
-            </div>
+            <div class="cert-card">CCNP ENCOR</div>
+
+            <div class="cert-card">CCNP ENARSI</div>
 
         </div>
+
     </section>
 
     <!-- SKILLS -->
 
     <section>
-        <h2 class="title">Skills</h2>
 
-        <div class="skills">
-            <span>AWS</span>
-            <span>Docker</span>
-            <span>Linux</span>
-            <span>Python</span>
-            <span>Bash</span>
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>Jenkins</span>
-            <span>CI/CD</span>
-            <span>Cloud Security</span>
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">AWS</div>
+            <div class="skill-card">Linux</div>
+            <div class="skill-card">Docker</div>
+            <div class="skill-card">Jenkins</div>
+            <div class="skill-card">Git</div>
+            <div class="skill-card">GitHub</div>
+            <div class="skill-card">CI/CD</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Bash</div>
+            <div class="skill-card">Networking</div>
+            <div class="skill-card">Cloud Security</div>
+            <div class="skill-card">Terraform</div>
+
         </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+
+                <h3>AWS CI/CD Pipeline</h3>
+
+                <p>
+                    Automated deployment using GitHub,
+                    CodePipeline, CodeBuild and CodeDeploy.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Docker + Jenkins Pipeline</h3>
+
+                <p>
+                    Containerized deployment with Jenkins
+                    automation and AWS integration.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>AWS ECS Fargate Deployment</h3>
+
+                <p>
+                    Highly available containerized application
+                    deployment using ECS and ECR.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Enterprise AWS Architecture</h3>
+
+                <p>
+                    Multi-tier architecture using VPC,
+                    ALB, EC2, RDS and Auto Scaling.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-box">
+
+            <p>Email: shreyasrasam72@gmail.com</p>
+
+            <p>Location: Mumbai, India</p>
+
+            <div class="hero-buttons">
+
+                <a href="mailto:shreyasrasam72@gmail.com">
+                    Email Me
+                </a>
+
+            </div>
+
+        </div>
+
     </section>
 
     <!-- FOOTER -->
 
     <footer>
-        © 2026 Shreyas Rasam | AWS Cloud & DevOps Engineer
+
+        <p>
+            © 2026 Shreyas Rasam | AWS Cloud & DevOps Engineer
+        </p>
+
     </footer>
 
-    <!-- MODAL -->
-
-    <div id="modal" class="modal">
-
-        <div class="modal-content">
-
-            <span class="close" onclick="closeModal()">&times;</span>
-
-            <div id="modalBody"></div>
-
-        </div>
-
-    </div>
-
-    <script src="script.js"></script>
-
 </body>
+
 </html>
